@@ -1,4 +1,4 @@
-PchiwaN
-=======
+This is me
+==========
 
-Engineer. Melomaniac. Film buff. Football player. Developer. Cartoonist. Traveler. Mountaineer. Procrastinator. Geek.
+Software Engineer. Melomaniac. Traveler. Mountaineer. Gamer. Geek.
