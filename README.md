@@ -1,4 +1,3 @@
-This is me
-==========
+# Sílvia Mur Blanch
 
-Software Engineer. Melomaniac. Traveler. Mountaineer. Gamer. Geek.
+Software Engineer
