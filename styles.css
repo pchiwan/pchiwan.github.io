@@ -62,27 +62,36 @@ header h2 {
 header address {
   margin-top: 2rem;
   font-style: normal;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.2rem;
 }
 address p {
   display: inline;
   font-weight: 400;
-}
-address p + p {
-  margin-left: 1.2rem;
-}
-address p + p::before {
-  content: "|";
-  margin-right: 1.2rem;
+  margin: 0;
 }
 main {
   display: grid;
   grid-template-columns: 25% auto;
+  grid-template-areas: "knowledge experience";
   padding: 2rem;
   gap: 2rem;
 }
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.column-knowledge {
+  grid-area: knowledge;
+}
+.column-experience {
+  grid-area: experience;
+}
 section {
   break-inside: avoid;
-  margin-bottom: 1.2rem;
 }
 h3 {
   margin: 0 0 0.5rem 0;
@@ -164,6 +173,14 @@ h3 {
 .education .education-detail:not(:last-child),
 .other .other-detail:not(:last-child) {
   margin-bottom: 0.5rem;
+}
+
+@media (max-width: 700px) {
+  main {
+    grid-template-columns: 1fr;
+    grid-template-areas: "experience" "knowledge";
+    gap: 1.2rem;
+  }
 }
 
 @media print {
